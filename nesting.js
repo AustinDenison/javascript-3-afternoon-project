@@ -50,7 +50,16 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for(let i = 0; i < arr.length; i++){
+    if([i] === "Theo")
+    delete employees[i]; {
+      if([i] === "Lorie")
+      "department" = "HR" 
+    }
+  }
+  return arr
+} //Code Here
 
 
 
