@@ -51,14 +51,14 @@ var employees = [
 */
 
 function employeeUpdater(){
-  for(let i = 0; i < arr.length; i++){
-    if([i] === "Theo")
-    delete employees[i]; {
-      if([i] === "Lorie")
-      "department" = "HR" 
+  for(let i = 0; i < employees.length; i++){
+    for(let j = 0; j < employees.length; j++){
+      if(employees[i] === "firstName"["Theo"] && employees[j] === "firstName"["Lorie"]){
+       employees.splice(i, 1), employees[j]["department"] = "HR"
+      }
     }
   }
-  return arr
+  return employees
 } //Code Here
 
 
@@ -77,7 +77,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+function removeDuplicates(workplaceAccidents){
+  for(let i = 0; i < workplaceAccidents.length; i++){
+    for(let j = 0; j < workplaceAccidents.length; j++){
+      if(workplaceAccidents[i] === workplaceAccidents[j]){
+        workplaceAccidents.splice(j, 1)
+      }
+    }
+  }
+  return workplaceAccidents
+} //Code Here
 
 
 
