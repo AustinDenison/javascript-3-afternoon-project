@@ -53,8 +53,11 @@ var employees = [
 function employeeUpdater(){
   for(let i = 0; i < employees.length; i++){
     for(let j = 0; j < employees.length; j++){
-      if(employees[i] === "firstName"["Theo"] && employees[j] === "firstName"["Lorie"]){
-       employees.splice(i, 1), employees[j]["department"] = "HR"
+      if(employees[i].firstName === "Theo"){
+        employees.splice(i, 1)
+      } 
+      if(employees[j].firstName === "Lorie"){
+        employees[j].department = "HR"
       }
     }
   }
@@ -80,7 +83,7 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 function removeDuplicates(workplaceAccidents){
   for(let i = 0; i < workplaceAccidents.length; i++){
     for(let j = 0; j < workplaceAccidents.length; j++){
-      if(workplaceAccidents[i] === workplaceAccidents[j]){
+      if(workplaceAccidents[i] === workplaceAccidents[j] && j !== i){
         workplaceAccidents.splice(j, 1)
       }
     }
